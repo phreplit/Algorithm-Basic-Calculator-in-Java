@@ -1,5 +1,5 @@
 
-package application; // eclipse ide - delete it, if you run, out of  the eclipse - output error
+package application; // eclipse ide - delete it, if you run, out of the eclipse - output error
 
 // Author: PHNO - Tecnólogo | Pós-Graduado
 // Release Date: 17/10/2023
@@ -61,7 +61,7 @@ public class Main {
         int c = scanner.nextInt();
         System.out.println("\n Enter second number: ");
         int d = scanner.nextInt();
-		int sub = (c - d);
+	int sub = (c - d);
         System.out.println("\n Subtract result: " + sub);
         Scanner scanner2 = new Scanner(System.in);
         System.out.println("\n Press enter to menu return... \n");
@@ -74,7 +74,7 @@ public class Main {
         int e = scanner.nextInt();
         System.out.println("\n Enter second number: ");
         int f = scanner.nextInt();
-		int mult = (e * f);
+	int mult = (e * f);
         System.out.println("\n Multiply result: " + mult); 
         Scanner scanner3 = new Scanner(System.in);
         System.out.println("\n Press enter to menu return... \n");
@@ -87,7 +87,7 @@ public class Main {
         int g = scanner.nextInt();
         System.out.println("\n Enter second number: ");
         int h = scanner.nextInt();
-	    int div = (g / h);
+	int div = (g / h);
         System.out.println("\n Divide result: " + div);
         Scanner scanner4 = new Scanner(System.in);
         System.out.println("\n Press enter to menu return... \n");

@@ -53,8 +53,7 @@ public class Main {
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("\n Press enter to menu return... \n");
         String enter = scanner1.nextLine();
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        clear();
         break;
       case 2:
         System.out.println("\n Enter first number: "); 
@@ -66,8 +65,7 @@ public class Main {
         Scanner scanner2 = new Scanner(System.in);
         System.out.println("\n Press enter to menu return... \n");
         String enter2 = scanner2.nextLine();
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        clear();
         break;
       case 3:
         System.out.println("\n Enter first number: ");  
@@ -79,8 +77,7 @@ public class Main {
         Scanner scanner3 = new Scanner(System.in);
         System.out.println("\n Press enter to menu return... \n");
         String enter3 = scanner3.nextLine();
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        clear();
       break;
       case 4:
         System.out.println("\n Enter first number: ");
@@ -92,15 +89,13 @@ public class Main {
         Scanner scanner4 = new Scanner(System.in);
         System.out.println("\n Press enter to menu return... \n");
         String enter4 = scanner4.nextLine();
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        clear();
       break;
       case 5:
         System.out.println("\n Finished Algorithm! ");
       break loop;
       case 9:
-      System.out.print("\033[H\033[2J");
-      System.out.flush();
+      clear();
       Scanner scanner9 = new Scanner(System.in);
       System.out.println("\n");
       System.out.println(" Algorithm: Basic Calculator in Java ");
@@ -112,25 +107,26 @@ public class Main {
       System.out.println("");
       System.out.println("\n Press enter to menu return... \n");
       String enter9 = scanner9.nextLine();
-      System.out.print("\033[H\033[2J");
-      System.out.flush();
+      clear();
       break;
       default:
         Scanner scanner5 = new Scanner(System.in);
         System.out.println("\n Error. choice other option. ");
         System.out.println("\n Press enter to menu return... \n");
         String enter5 = scanner5.nextLine();
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        clear();
        }
       } catch (Exception e) {
       Scanner scanner6 = new Scanner(System.in);
       System.out.println("\n Error. system failure.");
       System.out.println("\n Press enter to menu return... \n");
       String enter6 = scanner6.nextLine();
-      System.out.print("\033[H\033[2J");
-      System.out.flush();
+      clear();
       }            
     }
+   }
+   public static void clear() {
+	 System.out.print("\033[H\033[2J"); // clear screen
+	 System.out.flush();
    }
   }
